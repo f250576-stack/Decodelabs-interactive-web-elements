@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>DecodeLabs | Interactive Web Elements</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1 id="heading">
+                DecodeLabs
+            </h1>
+
+            <p>
+                Frontend Development Internship
+            </p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h2>
+
+                Learn HTML, CSS & JavaScript
+
+            </h2>
+
+            <p id="description">
+
+                Build beautiful, responsive and interactive
+                websites using HTML, CSS and JavaScript.
+
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    onclick="changeText()">
+
+                    Change Text
+
+                </button>
+
+                <button
+                    type="button"
+                    onclick="toggleDarkMode()">
+
+                    Dark Mode
+
+                </button>
+
+                <button
+                    type="button"
+                    onclick="changeColor()">
+
+                    Change Background
+
+                </button>
+
+                <button
+                    type="button"
+                    onclick="showTime()">
+
+                    Show Time
+
+                </button>
+
+            </div>
+
+            <div class="clock">
+
+                <h3 id="time">
+
+                    Click "Show Time"
+
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1000"
+                alt="Coding">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- About -->
+
+    <section id="about" class="about">
+
+        <h2>
+
+            About DecodeLabs
+
+        </h2>
+
+        <p>
+
+            DecodeLabs provides practical
+            Frontend Development training
+            for beginners.
+
+            Students learn HTML, CSS,
+            JavaScript and build real-world
+            responsive projects.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- Features -->
+
+    <section id="features" class="features">
+
+        <h2>
+
+            Our Features
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+
+                    HTML5
+
+                </h3>
+
+                <p>
+
+                    Semantic webpage structure
+                    with clean coding practices.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    CSS3
+
+                </h3>
+
+                <p>
+
+                    Responsive layouts,
+                    animations and attractive
+                    UI design.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    JavaScript
+
+                </h3>
+
+                <p>
+
+                    Interactive web elements,
+                    DOM Manipulation
+                    and Events.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Why Choose Us -->
+
+    <section class="why">
+
+        <h2>
+
+            Why Choose DecodeLabs?
+
+        </h2>
+
+        <div class="why-container">
+
+            <div>
+
+                ✅ Expert Mentors
+
+            </div>
+
+            <div>
+
+                ✅ Live Projects
+
+            </div>
+
+            <div>
+
+                ✅ Practical Learning
+
+            </div>
+
+            <div>
+
+                ✅ Career Guidance
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Gallery Section -->
+
+    <section id="gallery" class="gallery-section">
+
+        <h2>Project Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500"
+                alt="Coding">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                alt="Developer">
+
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500"
+                alt="Programming">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+
+            <h2>500+</h2>
+
+            <p>Students</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>50+</h2>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>100%</h2>
+
+            <p>Learning Support</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+
+            We'd love to hear from you!
+
+        </p>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Enter Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Enter Your Email"
+                required>
+
+            <textarea
+                rows="5"
+                placeholder="Write Your Message"
+                required></textarea>
+
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    onclick="welcomeMessage()">
+
+                    Contact Us
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>
+
+            DecodeLabs
+
+        </h3>
+
+        <p>
+
+            Learn • Build • Grow
+
+        </p>
+
+        <p>
+
+            Email:
+            info@decodelabs.com
+
+        </p>
+
+        <p>
+
+            Phone:
+            +92 300 1234567
+
+        </p>
+
+        <p>
+
+            © 2026 DecodeLabs.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
